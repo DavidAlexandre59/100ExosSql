@@ -582,6 +582,7 @@ SELECT nom, emploi, ville
 from emp
 inner join serv on emp.noserv = serv.noserv
 where service not in (SELECT service from emp natural join serv where noemp = sup );
+
 /*_____________________________________________________________________________*/
 /*_____________________________________________________________________________*/
 
